@@ -1,0 +1,1265 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" type="text/css" href="">
+    <title>Health Connect</title>
+    <script src="https://kit.fontawesome.com/24f458c04b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="bootstrap-5.3.3-dist/css/bootstrap.css">
+      
+
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+
+.login--container{
+    padding-left: 35%;
+    justify-content: center;
+}
+
+ .container {
+    width: 400px;
+    max-width: 400px;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+    background: #ffffff;
+}
+
+.container,
+.form__input,
+.form__button {
+    font: 500 1rem 'freeman', sans-serif;
+}
+
+.form--hidden {
+    display: none;
+}
+
+.form > *:first-child {
+    margin-top: 0;
+}
+
+.form > *:last-child {
+    margin-bottom: 0;
+}
+
+.form__title {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.form__message {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.form__message--success {
+    color: var(--color-success);
+}
+
+.form__message--error {
+    color: var(--color-error);
+}
+
+.form__input-group {
+    margin-bottom: 1rem;
+}
+
+.form__input {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border-radius: var(--border-radius);
+    border: 1px solid #dddddd;
+    outline: none;
+    background: #eeeeee;
+    transition: background 0.2s, border-color 0.2s;
+}
+
+.form__input:focus {
+    border-color: var(--color-primary);
+    background: #ffffff;
+}
+
+.form__input--error {
+    color: var(--color-error);
+    border-color: var(--color-error);
+}
+
+.form__input-error-message {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    color: var(--color-error);
+}
+
+.form__button {
+    width: 100%;
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #ffffff;
+    border: none;
+    border-radius: var(--border-radius);
+    outline: none;
+    cursor: pointer;
+    background: var(--color-primary);
+}
+
+.form__button:hover {
+    background: var(--color-primary-dark);
+}
+
+.form__button:active {
+    transform: scale(0.98);
+}
+
+.form__text {
+    text-align: center;
+}
+
+.form__link {
+    color: var(--color-secondary);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.form__link:hover {
+    text-decoration: underline;
+}
+
+        .our-partnership-container {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 1rem;
+            height: 90vh;
+            width: 80%;
+            margin: 100px auto;
+        }
+        .our-partnership-item-1 {
+            grid-column: 1 / 2;
+            grid-row: 1 / 3;
+            display: flex;
+            box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+            flex-direction: column;
+        }
+        .our-partnership-item-1 img {
+            height: 50%;
+            object-fit: cover;
+        }
+        .our-partnership-item-1 .text-content-partnership {
+            height: 50%;
+            width: 80%;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 50%;
+            align-items: center;
+            justify-content: center;
+        }
+        .our-partnership-item-1 .text-content-partnership h4{
+            padding-right: 50px;
+        }
+        .our-partnership-item-1 .text-content-partnership p{
+            padding-left: 30px;
+        }
+.line-partnership {
+    position: absolute;
+    left: 17%;
+    top: 72%;
+    width: 2px;
+    height: 17%;
+    background-color: green;
+}
+
+.content-line {
+    position: absolute;
+    left: 20%; /* Adjust as needed to place beside the line */
+    top: 80%;
+    transform: translateY(-50%);
+    padding-left: 10px; /* Add some spacing between the line and the content */
+    padding-right: 15px;
+}
+        .our-partnership-item-2 {
+            grid-column: 2 / 5;
+            grid-row: 1 / 2;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            background-image: url('images/partnership1.jpg');
+            background-size: cover;
+            box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+            background-position: center;
+        }
+        .text-content-partnership-2{
+            height: 50%;
+            position: relative;
+            width: 70%;
+            display: flex;
+            flex-direction: row;
+
+        }
+        .line-partnership-2 {
+            position: absolute;
+            left: 0;
+            top: 12%;
+            width: 5px;
+            height: 60%;
+            background-color: green;
+        }
+        .content-line-2{
+            position: absolute;
+            color: white;
+            margin-top: 10px;
+            padding-left: 9px;
+        }
+        .our-partnership-item-3 {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+
+            display: flex;
+            box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+
+        }
+        .our-partnership-item-4 {
+            grid-column: 3 / 5;
+            grid-row: 2 / 3;
+            justify-content: center;
+            align-items: center;
+            box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+        }
+        .text-content-partnership-4 {
+            width: 80%;
+            margin-top: -10%;
+
+           
+        }
+        .line-partnership-4 {
+            position: absolute;
+            left: 8%;
+            top: 37%;
+            width: 2px;
+            height: 45%;
+            background-color: green;
+        }
+        .content-line-4{
+            position: absolute;
+           width: 80%;
+           padding-bottom: 40%;
+            
+            
+        }
+
+.carousel-indicators_1 {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+    padding-left: 0;
+    margin-left: 0;
+    list-style: none;
+}
+
+.carousel-indicators_1 button {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #fff;
+    border: 2px solid;
+    margin: 0 5px;
+    opacity: 0.5;
+    transform: 10s;
+    transition: opacity 50s ease;
+}
+
+.carousel-indicators_1 .active {
+    background-color: #000;
+    opacity: 1;
+}
+
+.our-partnership-item-3 {
+    position: relative;
+}
+
+.carousel-partnership {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 10%;
+}
+.carousel-partnership h5{
+    font-size: 12px;
+    font-weight: bold;
+}
+.carousel-partnership p{
+    opacity: 50%;
+}
+.carousel-partnership h3{
+    text-align: center;
+
+
+}
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-size: 100% 100%;  /* Ensure the icon fills the element */
+      height: 1rem;  /* Set the size of the icon */
+      width: 1rem;
+    }
+
+    .carousel-control-prev-icon {
+      background-image: url('data:image/svg+xml,%3Csvg xmlns%3D"http%3A//www.w3.org/2000/svg" fill%3D"%23000" viewBox%3D"0 0 16 16"%3E%3Cpath d%3D"M11.354 1.646a.5.5 0 0 1 0 .708L6.707 7l4.647 4.646a.5.5 0 0 1-.708.708l-5-5a.5.5 0 0 1 0-.708l5-5a.5.5 0 0 1 .708 0z"/%3E%3C/svg%3E');  /* Custom left arrow */
+    }
+
+    .carousel-control-next-icon {
+      background-image: url('data:image/svg+xml,%3Csvg xmlns%3D"http%3A//www.w3.org/2000/svg" fill%3D"%23000" viewBox%3D"0 0 16 16"%3E%3Cpath d%3D"M4.646 1.646a.5.5 0 0 0 0 .708L9.293 7l-4.647 4.646a.5.5 0 0 0 .708.708l5-5a.5.5 0 0 0 0-.708l-5-5a.5.5 0 0 0-.708 0z"/%3E%3C/svg%3E');  /* Custom right arrow */
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+      top: 60%;  /* Center vertically */
+      transform: translateY(30%);  /* Move down by 20% */
+    }
+
+
+
+        .build-efficiency-container {
+            background-image: url('images/buildefficiency.jpg');
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .build-efficiency-content {
+            display: flex;
+            align-items: center;
+            width: 80%;
+            height: 80%;
+            color: white;
+            background: rgba(255, 255, 255, 0.0);
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .build-efficiency-vertical-line {
+            border-left: 3px solid white;
+            height: 100%;
+            margin: 0 20px;
+        }
+        .build-efficiency-text {
+            flex: 1;
+            margin-top: -10%;
+        }
+        .build-efficiency-text h2{
+            font-size: 60px;
+        }
+         .build-efficiency-text p{
+            opacity: 95%;
+            padding-left: 15px;
+         }
+         .para-build {
+                text-align: right;
+         }
+        .build-efficiency-icons {
+            display: grid;
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2px;
+            column-gap: 2px;
+            flex: 1;
+            margin-top: -20%;
+        }
+        .build-efficiency-icon {
+            font-size: 24px;
+            display: flex;
+            width: 100px;
+            flex-direction: column;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            padding-left: 10px;
+
+        }
+.build-efficiency-icon i {
+    font-size: 50px; /* Adjust the icon size as needed */
+    margin-bottom: 5px; /* Space between icon and text */
+}
+
+.build-efficiency-icon span {
+    font-size: 12px; /* Adjust the text size as needed */
+    text-align: center; /* Center the text */
+}
+
+        
+
+        .unique-home-outer-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('images/people2.jpg'); /* Replace with your image URL */
+            background-size: cover;
+            background-position: center;            
+            height: 70vh;
+            width: 80%;
+            margin-left: 10%;
+            margin-top: 5%;
+        }
+        .unique-home-edge-overlap {
+            width: 40%;
+            height: 70%;
+            margin-left: -9%;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        .unique-home-edge-overlap .line-container-edgeoverlap {
+            width: 2px;
+            height: 50%;
+            background-color: black;
+            margin-right: 15px;
+            left: 20;
+        }
+        .unique-home-edge-overlap .content-container-edgeoverlap {
+            padding-left: 15px;
+            color: black;
+            flex-grow: 2;
+        }
+        .unique-home-text-container {
+            margin-left: 10px;
+            color: white;
+            width: 50%;
+            font-size: 25px;
+            font-weight: 800;
+        }
+
+ .homefirst-container {
+    width: 100vw;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.homefirst-header {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.homefirst-content {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.homefirst-text {
+    position: relative;
+    width: 50%;
+    padding: 20px;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    
+}
+.homefirst-text {
+    font-size: 24Px;
+}
+
+.homefirst-line {
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    height: 60%;
+    border-left: 2px solid #000;
+    margin-right: 10px;
+}
+
+.homefirst-image {
+    width: 50%;
+    background-image: url('images/home11.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+}
+        
+
+
+    </style>
+</head>
+<body class="Home ">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="images/images1logo.jpeg" alt="logo" class="navbar-logo" style="width: 50px; height: auto;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="index.html" id="navbarDropdownMenuLink" role="button"  aria-expanded="false">
+              Home
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="action.html">Action</a></li>
+              <li><a class="dropdown-item" href="#Anotheraction">Another action</a></li>
+              <li><a class="dropdown-item" href="#Somethingelseher">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="articles.html" id="navbarDropdownMenuLink" role="button"  aria-expanded="false">
+              Articles
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#Action">Action</a></li>
+              <li><a class="dropdown-item" href="#Anotheraction">Another action</a></li>
+              <li><a class="dropdown-item" href="#Somethingelseher">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="findaproffessional.html" id="navbarDropdownMenuLink" role="button"  aria-expanded="false">
+              Find a Professional
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#Action">Action</a></li>
+              <li><a class="dropdown-item" href="#Anotheraction">Another action</a></li>
+              <li><a class="dropdown-item" href="#Somethingelseher">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="Wellnessprograms.html" id="navbarDropdownMenuLink" role="button"  aria-expanded="false">
+              Wellness Programs
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#Action">Action</a></li>
+              <li><a class="dropdown-item" href="#Anotheraction">Another action</a></li>
+              <li><a class="dropdown-item" href="#Somethingelseher">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="eventsandWorkshops.html" id="navbarDropdownMenuLink" role="button"  aria-expanded="false">
+              Events and Workshops
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#Action">Action</a></li>
+              <li><a class="dropdown-item" href="#Anotheraction">Another action</a></li>
+              <li><a class="dropdown-item" href="#Somethingelseher">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="newsandUpdates.html" id="navbarDropdownMenuLink" role="button"  aria-expanded="false">
+              News and Updates
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#Action">Action</a></li>
+              <li><a class="dropdown-item" href="#Anotheraction">Another action</a></li>
+              <li><a class="dropdown-item" href="#Somethingelseher">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="aboutUs.html" id="navbarDropdownMenuLink" role="button"  aria-expanded="false">
+              About Us
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#Action">Action</a></li>
+              <li><a class="dropdown-item" href="#Anotheraction">Another action</a></li>
+              <li><a class="dropdown-item" href="#Somethingelseher">Something else here</a></li>
+            </ul>
+          </li>
+        </ul>
+        <form class="d-flex ms-auto" role="search">
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+    
+       
+       
+      
+             
+   <div id="carouselExampleCaptions" class="carousel slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" data-bs-interval="2000"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="images/slideimg3.jpg" class="d-block w-100" alt="slide1" width="400" height="650">
+      <div class="carousel-caption d-none d-md-block">
+        <div class="container--3">
+            <div class="row middle-left">
+                <div class="slide-content">
+                    <h2>Health Connect</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                    cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#signupModal">
+  Get Started
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="signupModalLabel">Sign Up / Sign In</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Your sign-up and sign-in form here -->
+        <form>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password">
+          </div>
+          <button type="submit" class="btn btn-primary">Sign Up / Sign In</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+                </div>
+                
+            </div>
+            
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/slideimg1.jpg" class="d-block w-100" alt="slide2" width="400" height="650">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="images/slideimg5.jpg" class="d-block w-100" alt="slide3" width="400" height="650">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+   
+<br>
+<div class="homefirst-container">
+    <div class="homefirst-header">Your Header Here</div>
+    <div class="homefirst-content">
+        <div class="homefirst-text">
+            <div class="homefirst-line"></div>
+            <p>
+                Your text content goes here. It will expand as needed. You can add as much text as you like, and it will flow naturally.
+                 Your text content goes here. It will expand as needed. You can add as much text as you like, and it will flow naturally.
+                  Your text content goes here. It will expand as needed. You can add as much text as you like, and it will flow naturally.
+            </p>
+        </div>
+        <div class="homefirst-image"></div>
+    </div>
+    
+</div>
+<br>    
+<div class="container--1">
+    <section class="row">
+    <h1>Our Team</h1>
+    <div class="col-md-4">
+        <div class="team_img">
+            <img src="images/prof10.jpg" alt="team_member_image">
+        </div>
+        <h3>Oridge Kivaya</h3>
+        <p class="role">UI Developer</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.    </p>
+    </div>
+    <div class="col-md-4">
+        <div class="team_img">
+            <img src="images/prof10.jpg" alt="team_member_image">
+        </div>
+        <h3>Uhuru Kenyatta</h3>
+        <p class="role">Graphic Designer</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.    </p>
+    </div>
+
+    <div class="col-md-4">
+        <div class="team_img">
+            <img src="images/prof10.jpg" alt="team_member_image">
+        </div>
+        <h3>Samuel Arap</h3>
+        <p class="role">UI Veterinary</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.    </p>
+            </div>
+        </section>
+    </div>
+     <br>
+
+  <div class="container-wrapper">
+    <div class="board-members-container">
+        <h4 class="board-members-title">Board Members</h4>
+        <div class="board-members-row">
+              <div class="board-members-column">
+            <div class="board-members-column board-members-image-background" id="imageTrigger">
+                <div class="board-members-column board-members-image-background">
+                        <div class="board-members-grey-overlay">
+                               <p>Your Overlay Text Here</p>
+                        </div>
+                </div>
+              
+
+            </div>
+          </div>
+            <div class="board-members-column board-members-text-container">
+                <p>Centered Text Here</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="leadership-container-wrapper">
+  <h4 class="leadership-title">Management Team</h4>
+    <div class="leadership-gallery">
+        <div class="leadership-row">
+            <div class="leadership-column">
+                <div class="leadership-image" data-url="page-url-1.html" style="background-image: url('images/ld2.jpg');">
+                    <div class="leadership-overlay">
+                        <p>Overlay Text 1</p>
+                    </div>
+                </div>
+            </div>
+            <div class="leadership-column">
+                <div class="leadership-image" data-url="page-url-2.html" style="background-image: url('images/ld3.jpg');">
+                    <div class="leadership-overlay">
+                        <p>Overlay Text 2</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="leadership-row">
+            <div class="leadership-column">
+                <div class="leadership-image" data-url="page-url-3.html" style="background-image: url('images/ld4.jpg');">
+                    <div class="leadership-overlay">
+                        <p>Overlay Text 3</p>
+                    </div>
+                </div>
+            </div>
+            <div class="leadership-column">
+                <div class="leadership-image" data-url="page-url-4.html" style="background-image: url('images/ld5.jpg');">
+                    <div class="leadership-overlay">
+                        <p>Overlay Text 4</p>
+                    </div>
+                </div>
+            </div>
+            <div class="leadership-column">
+                <div class="leadership-image" data-url="page-url-5.html" style="background-image: url('images/ld6.jpg');">
+                    <div class="leadership-overlay">
+                        <p>Overlay Text 5</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="leadership-row">
+            <div class="leadership-column">
+                <div class="leadership-image" data-url="page-url-6.html" style="background-image: url('images/ld7.jpg');">
+                    <div class="leadership-overlay">
+                        <p>Overlay Text 6</p>
+                    </div>
+                </div>
+            </div>
+            <div class="leadership-column">
+                <div class="leadership-image" data-url="page-url-7.html" style="background-image: url('images/ld8.jpg');">
+                    <div class="leadership-overlay">
+                        <p>Overlay Text 7</p>
+                    </div>
+                </div>
+            </div>
+            <div class="leadership-column">
+                <div class="leadership-image" data-url="page-url-8.html" style="background-image: url('images/ld9.jpg');">
+                    <div class="leadership-overlay">
+                        <p>Overlay Text 8</p>
+                    </div>
+                </div>
+            </div>
+            <div class="leadership-column">
+                <div class="leadership-image" data-url="page-url-9.html" style="background-image: url('images/ld10.jpg');">
+                    <div class="leadership-overlay">
+                        <p>Overlay Text 9</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal Structure -->
+<div id="leadershipModal" class="leadership-modal">
+    <div class="leadership-modal-content">
+        <span class="leadership-close">&times;</span>
+        <iframe src="" frameborder="0"></iframe>
+    </div>
+</div>
+
+<div class="news-container">
+    <div id="newsroom" class="newsroom">
+        <h1>Newsroom</h1>
+        <div class="news-line">
+            <div>News</div>
+        </div>
+    </div>
+    <div class="news-content">
+        <div class="news-update"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+        <div class="news-update"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+        <div class="news-update"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+        <div class="news-update"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+        <div class="news-update"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+        <div class="news-update"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+        <div class="news-update"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+        <div class="news-update"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+    </div>
+</div>
+
+    <div class="our-partnership-container">
+        <div class="our-partnership-item-1 card">
+            <img src="images/partnership2.jpg" alt="Image">
+            <div class="text-content-partnership">
+               <h4>Connections.</h4>
+                    <p>"Health Connect, Connections across East Africa"</p>
+
+                <div class="line-partnership"></div>
+                <div class="content-line">This is the content beside the line.This is the content beside the lineThis is the content beside the line</div>
+            </div>
+        </div>
+        <div class="our-partnership-item-2">
+            <div class="text-content-partnership-2">
+                <div class="line-partnership-2"></div>
+                <div class="content-line-2">This is the content beside the line.This is the content beside the lineThis is the content beside the line This is the content beside the line.This is the content beside the lineThis is the content beside</div>
+            </div>   
+                
+
+        </div>
+<div class="our-partnership-item-3 card">
+    <!-- Carousel -->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators_1">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                  <img src="images/partnership2.jpg" class="d-block w-100" alt="...">
+                    <div class="carousel-partnership">
+                    
+                           <h6>HEALTH CONNECT</h6>
+                            <h5>Health.inc.<br>
+                            Industries.ltd</h5>
+                            <h3>66.76</h3>
+                                <P>0.00056</P>
+                        
+                    
+                    </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/partnership2.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-partnership">
+                    
+                           <h6>HEALTH CONNECT</h6>
+                            <h5>Health.inc.<br>
+                            Industries.ltd</h5>
+                            <h3>66.76</h3>
+                                <P>0.00056</P>
+                        
+                    
+                    </div>
+            </div>
+            <div class="carousel-item">
+                <img src="images/partnership2.jpg" class="d-block w-100" alt="...">
+                                    <div class="carousel-partnership">
+                    
+                           <h6>HEALTH CONNECT</h6>
+                            <h5>Health.inc.<br>
+                            Industries.ltd</h5>
+                            <h3>66.76</h3>
+                                <P>0.00056</P>
+                        
+                    
+                    </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div>
+
+        <div class="our-partnership-item-4 card">
+             <div class="text-content-partnership-4">
+               <h4>Connections.</h4>
+                    <p>"Health Connect, Connections across East Africa"</p>
+
+                <div class="line-partnership-4"></div>
+                <div class="content-line-4">This is the content beside the line.This is the content beside the lineThis is the content beside the line</div>
+            </div>           
+            
+        </div>
+    </div>
+
+
+<div class="build-efficiency-container">
+    <div class="build-efficiency-content">
+        <div class="build-efficiency-text">
+            <h2>Empowering Lives,Connecting you to Your Future & Living Healthy Lives</h2>
+
+            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+            </p>
+            <p class="para-build">Jeff Bezos,<br>CEO, Amazon Services</p>
+        </div>
+        <div class="build-efficiency-vertical-line"></div>
+        <div class="build-efficiency-icons">
+            <div class="build-efficiency-icon"><i class="fa-regular fa-building fa-3x"></i> <span>Industry</span></div>
+            <div class="build-efficiency-icon"><i class="fa-regular fa-hospital fa-3x"></i><span>Assistance</span></div>
+            <div class="build-efficiency-icon"><i class="fa-solid fa-school fa-3x"></i><span>Medical</span></div>
+            <div class="build-efficiency-icon"><i class="fa-solid fa-atom fa-3x"></i><span>Emergency</span></div>
+            <div class="build-efficiency-icon"><i class="fa-solid fa-square-h fa-3x"></i><span>Proffesionals</span></div>
+            <div class="build-efficiency-icon"><i class="fa-solid fa-kit-medical fa-3x"></i><span>ContactUs</span></div>
+            <div class="build-efficiency-icon"><i class="fa-solid fa-tower-broadcast fa-3x"></i><span>Fitness</span></div>
+            <div class="build-efficiency-icon"><i class="fa-solid fa-truck-medical fa-3x"></i><span>Technology</span></div>
+        </div>
+    </div>
+</div>
+
+    <div class="unique-home-outer-container">
+
+        <div class="unique-home-edge-overlap">
+            <!-- Content goes here -->
+            <div class="line-container-edgeoverlap">
+                <!-- Black line -->
+            </div>
+            <div class="content-container-edgeoverlap">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+               </p>
+            </div>
+        </div>
+            <div class="unique-home-text-container">
+            <!-- Text content on the right side -->
+            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam"
+                </p>
+        </div>
+    </div>
+<div class="login--container">
+    <div class="container">
+        <form class="form" id="login">
+            <h1 class="form__title">Login</h1>
+            <div class="form__message form__message--error"></div>
+            <div class="form__input-group">
+                <input type="text" class="form__input" autofocus placeholder="Username or email">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input" autofocus placeholder="Password">
+                <div class="form__input-error-message"></div>
+            </div>
+            <button class="form__button" type="submit">Continue</button>
+            <p class="form__text">
+                <a href="#" class="form__link">Forgot your password?</a>
+            </p>
+            <p class="form__text">
+                <a class="form__link" href="./" id="linkCreateAccount">Don't have an account? Create account</a>
+            </p>
+        </form>
+        <form class="form form--hidden" id="createAccount">
+            <h1 class="form__title">Create Account</h1>
+            <div class="form__message form__message--error"></div>
+            <div class="form__input-group">
+                <input type="text" id="signupUsername" class="form__input" autofocus placeholder="Username">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="text" class="form__input" autofocus placeholder="Email Address">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input" autofocus placeholder="Password">
+                <div class="form__input-error-message"></div>
+            </div>
+            <div class="form__input-group">
+                <input type="password" class="form__input" autofocus placeholder="Confirm password">
+                <div class="form__input-error-message"></div>
+            </div>
+            <button class="form__button" type="submit">Continue</button>
+            <p class="form__text">
+                <a class="form__link" href="./" id="linkLogin">Already have an account? Sign in</a>
+            </p>
+        </form>
+    </div>
+</div>
+<br>
+<footer class="bg-dark text-white pt-5 pb-4" style="padding: 5px;">
+
+    <div class="text-center text-md-left">
+        <div class="row  text-md-left">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Health Connect.</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+                cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+                proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                
+            </div>
+            <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Health Connect.</h5>
+                <p>
+                    <a href="" class="text-white" style="text-decoration: none;">Our Customers</a>
+                </p>
+                
+                 <p>
+                    <a href="" class="text-white" style="text-decoration: none;">Our Customers</a>
+                </p>
+                <p>
+                    <a href="" class="text-white" style="text-decoration: none;">Our Customers</a>
+                </p>
+                <p>
+                    <a href="" class="text-white" style="text-decoration: none;">Our Customers</a>
+                </p>
+                <p>
+                    <a href="" class="text-white" style="text-decoration: none;">Our Customers</a>
+                </p>
+            </div>
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">My Links</h5>
+                                <p>
+                    <a href="" class="text-white" style="text-decoration: none;">Our Customers</a>
+                </p>
+                
+                 <p>
+                    <a href="" class="text-white" style="text-decoration: none;">Our Customers</a>
+                </p>
+                <p>
+                    <a href="" class="text-white" style="text-decoration: none;">Our Customers</a>
+                </p>
+                <p>
+                    <a href="" class="text-white" style="text-decoration: none;">Our Customers</a>
+                </p>
+                <p>
+                    <a href="" class="text-white" style="text-decoration: none;">Our Customers</a>
+                </p>    
+            </div>
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                <h5 class="text-uppercase mb-4 font-weight-bold text-warning">Contacts</h5>
+                <p>
+                    <i class="fa-solid fa-folder-minus"></i>Drake
+                </p>
+                <p>
+                    <i class="fa-solid fa-house"></i>Drake
+                </p>
+                 <p>
+                    <i class="fa-solid fa-envelope"></i>Drake
+                </p>
+                 <p>
+                    <i class="fa-solid fa-id-badge"></i>Drake
+                </p>
+                 <p>
+                    <i class="fa-solid fa-user-minus"></i>Drake
+                </p>    
+            </div>
+            
+        </div>
+        <hr class="mb-4">
+        <div class="row aling-items-center">
+            <div class="col-md-7 col-lg-8" style="text-align: left;">
+                <p>Copuright @2020 All rights reserved by:
+                    <a href="" style="text-decoration: none;">
+                        <strong class="text-warning">The Providers</strong>
+                    </a>
+                </p>
+                
+            </div>
+            <div class="col-md-5 col-lg-4">
+                <div class="text-center text-md-right">
+                    <ul class="list-unstyled list inline" style="display: inline-flex; list-style-position: right;">
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fa-brands fa-facebook"></i> </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fa-brands fa-x-twitter"></i> </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fa-regular fa-message"></i> </a>
+                        </li>                    
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fa-brands fa-snapchat"></i> </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fa-brands fa-instagram"></i> </a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="btn-floating btn-sm text-white" style="font-size: 23px;"><i class="fa-brands fa-square-threads"></i> </a>
+                        </li>              
+                    </ul>
+                          </div>
+                
+            </div>
+            
+        </div>
+    </div>
+    
+</footer>
+
+<script>
+    function setFormMessage(formElement, type, message) {
+    const messageElement = formElement.querySelector(".form__message");
+
+    messageElement.textContent = message;
+    messageElement.classList.remove("form__message--success", "form__message--error");
+    messageElement.classList.add(`form__message--${type}`);
+}
+
+function setInputError(inputElement, message) {
+    inputElement.classList.add("form__input--error");
+    inputElement.parentElement.querySelector(".form__input-error-message").textContent = message;
+}
+
+function clearInputError(inputElement) {
+    inputElement.classList.remove("form__input--error");
+    inputElement.parentElement.querySelector(".form__input-error-message").textContent = "";
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+    const loginForm = document.querySelector("#login");
+    const createAccountForm = document.querySelector("#createAccount");
+
+    document.querySelector("#linkCreateAccount").addEventListener("click", e => {
+        e.preventDefault();
+        loginForm.classList.add("form--hidden");
+        createAccountForm.classList.remove("form--hidden");
+    });
+
+    document.querySelector("#linkLogin").addEventListener("click", e => {
+        e.preventDefault();
+        loginForm.classList.remove("form--hidden");
+        createAccountForm.classList.add("form--hidden");
+    });
+
+    loginForm.addEventListener("submit", e => {
+        e.preventDefault();
+
+        // Perform your AJAX/Fetch login
+
+        setFormMessage(loginForm, "error", "Invalid username/password combination");
+    });
+
+    document.querySelectorAll(".form__input").forEach(inputElement => {
+        inputElement.addEventListener("blur", e => {
+            if (e.target.id === "signupUsername" && e.target.value.length > 0 && e.target.value.length < 10) {
+                setInputError(inputElement, "Username must be at least 10 characters in length");
+            }
+        });
+
+        inputElement.addEventListener("input", e => {
+            clearInputError(inputElement);
+        });
+    });
+});
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script type="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.8/umd/popper.min.js"></script>
+    <script type="dropdown.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
